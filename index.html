@@ -965,17 +965,7 @@
             });
         });
 
-        // Add exit-intent popup (Google Ads compliant)
-        let exitIntentShown = false;
-        document.addEventListener('mouseleave', function(e) {
-            if (e.clientY <= 0 && !exitIntentShown) {
-                exitIntentShown = true;
-                if (confirm('Wait! Get 50% off Digital PC Shield before you leave. Click OK to see our special offer!')) {
-                    document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' });
-                }
-            }
-        });
-
+       
         // Add countdown timer for urgency
         function updateCountdown() {
             const now = new Date().getTime();
